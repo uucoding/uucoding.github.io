@@ -146,7 +146,7 @@
     .records {
       display: grid;
       gap: 16px;
-      padding: 16px;
+      padding: 8px;
     }
 
     .record {
@@ -162,12 +162,11 @@
     }
 
     .record-title {
-      margin: 0;
-      padding: 0 10px 2px;
-      color: var(--text);
-      font-size: 16px;
-      font-weight: 550;
-      overflow-wrap: anywhere;
+      font-size: 18px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: normal;
+      padding: 0 5px;
     }
 
     .row {
@@ -176,7 +175,6 @@
       align-items: start;
       gap: 12px;
       margin-top: 14px;
-      padding: 0 10px;
       color: #999999;
       font-size: 15px;
     }
@@ -186,6 +184,7 @@
     }
 
     .row-value {
+      font-size: 15px;
       min-width: 0;
       text-align: right;
       overflow-wrap: anywhere;
@@ -200,6 +199,12 @@
       border-radius: 8px;
     }
 
+
+    .basic-info {
+      margin: 16px;
+      padding-left: 18px;
+      box-shadow: var(--shadow);
+    }
     @media (min-width: 768px) {
       body {
         padding: 24px;
@@ -215,13 +220,6 @@
 
       .header {
         padding-inline: 24px;
-      }
-
-      .basic-info {
-        margin: 16px;
-        padding-left: 18px;
-        border-radius: 8px;
-        box-shadow: var(--shadow);
       }
 
       .field {
@@ -289,7 +287,7 @@
               <h2 class="record-title">2025年公需科目课件</h2>
               <div class="row">
                 <div class="row-name">学习时间</div>
-                <div class="row-value">2025-09-21</div>
+                <div class="row-value">2025-05-21</div>
               </div>
               <div class="row">
                 <div class="row-name">学习平台</div>
